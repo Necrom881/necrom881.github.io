@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9; /* Light neutral background */
+    color: #2c3e50; /* Dark slate text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+#webName h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #cdd6dd; /* Deep navy blue */
+    padding: 20px;
+    background-color: #34495e; /* Soft, dark blue-gray */
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Section */
+#searches {
+    /*max-width: fixed;*/
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ecf0f1; /* Soft light grayish-blue */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#searches h3 {
+    text-align: center;
+    color: #2980b9; /* Calm blue */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#searches label {
+    font-size: 1rem;
+    color: #7f8c8d; /* Medium gray */
+    margin-right: 10px;
+}
+
+#searches input, #searches select {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 40px;
+    border: 1px solid #bdc3c7; /* Soft light gray border */
+    background-color: #bdc3c7; /* Grayish background for input fields */
+    color: #2c3e50; /* Dark text for readability */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#searches select {
+    width: auto;
+}
+
+#searches button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1abc9c; /* Turquoise accent */
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Sort Section */
+#sorts {
+    /*max-width: fixed;*/
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #34495e; /* Deep blue-gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sorts label {
+    font-size: 1rem;
+    color: #ecf0f1; /* Light gray */
+    margin-right: 10px;
+}
+
+#sorts button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1abc9c; /* Turquoise accent */
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sorts button:hover {
+    background-color: #16a085; /* Slightly darker turquoise */
+}
+
+/* Movies Container */
+#allMoviesContainer {
+   /* max-width: fixed;*/
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.containers {
+    background-color: #2c3e50; /* Deep gray-blue background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*width: fixed;*/
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.containers:hover {
+    transform: translateY(-10px);
+}
+
+.containers h5 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ecf0f1; /* Light gray text */
+    margin: 15px 0;
+}
+
+.containers p {
+    font-size: 0.9rem;
+    color: #ecf0f1; /* Light gray text */
+    margin: 10px;
+}
+
+.containers img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio without cropping */
+    object-fit: contain; /* Ensure image fits without distortion */
+    max-height: 400px; /* Limit image height */
+}
+
+.containers ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.containers ul li {
+    margin: 5px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #allMoviesContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sorts {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+body {
+    background-color: #34464b;
+    color: #ecf0f1; /* Light text to contrast */
+}
