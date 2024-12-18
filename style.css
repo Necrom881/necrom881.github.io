@@ -67,6 +67,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
+
+
 /* Sort Section */
 #sorts {
     /*max-width: fixed;*/
@@ -100,6 +102,8 @@ body {
 #sorts button:hover {
     background-color: #16a085; /* Slightly darker turquoise */
 }
+
+
 
 /* Movies Container */
 #allMoviesContainer {
@@ -143,6 +147,7 @@ body {
     height: auto; /* Maintain aspect ratio without cropping */
     object-fit: contain; /* Ensure image fits without distortion */
     max-height: 400px; /* Limit image height */
+    margin-top: 20px
 }
 
 .containers ul {

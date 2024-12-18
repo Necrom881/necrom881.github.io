@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Github</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,46 +16,15 @@
         <label for="searchByActor">By Actor: </label>
         <button id="s-Actor">Search</button>
         <input type="text" name = "Actor" id = "searchByActor">
+        <!--<input type="number" name = "Year" placeholder="Year" id="searchByYear">
+        <button id="s-Year">Search</button>-->
         <label for="genreSelector">Genre: </label>
         <select name="Genre" id="genreSelector">
             <option value="emptyGenre" selected>All</option>
-            <option value="Drama">Drama</option>
-            <option value="Comedy">Comedy</option>
-            <option value="Action">Action</option>
-            <option value="Crime">Crime</option>
-            <option value="Thriller">Thriller</option>
-            <option value="Romance">Romance</option>
-            <option value="Adventure">Adventure</option>
-            <option value="Horror">Horror</option>
-            <option value="Sci-Fi (Science Fiction)">Sci-Fi</option>
-            <option value="Fantasy">Fantasy</option>
-            <option value="Animation">Animation</option>
-            <option value="Mistery">Mistery</option>
-            <option value="Documentary">Documentary</option>
-            <option value="Family">Family</option>
-            <option value="Music">Music</option>
-            <option value="History">History</option>
-            <option value="War">War</option>
         </select>
         <label for="countrySelector">Country: </label>
         <select name="Country" id="countrySelector">
             <option value="emptyCountry" selected>All</option>
-            <option value="United States">United States</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="France">France</option>
-            <option value="Italy">Italy</option>
-            <option value="Germany">Germany</option>
-            <option value="Japan">Japan</option>
-            <option value="Canada">Canada</option>
-            <option value="India">India</option>
-            <option value="Spain">Spain</option>
-            <option value="Australia">Australia</option>
-            <option value="Russia">Russia</option>
-            <option value="South Korea">South Korea</option>
-            <option value="China">China</option>
-            <option value="Sweeden">Sweeden</option>
-            <option value="Mexico">Mexico</option>
-            <option value="Brazil">Brazil</option>
         </select>
     </div>
     <div id = "sorts">
@@ -65,6 +34,12 @@
         <label>Title</label>
         <button id="azSort">A to Z</button>
         <button id="zaSort">Z to A</button>
+        <label for="r-asc">Asc</label>
+        <input type="radio" id="r-asc" name="sort" value="ascending" checked>
+        <label for="r-desc">Desc</label>
+        <input type="radio" id="r-desc" name="sort" value="descending">
+        <button id="Sort">Sort</button>
+        <span id="counter"></span>
     </div>
     <div id="allMoviesContainer">
         <!--
@@ -88,3 +63,4 @@
 <script src="./myhttp.js"></script>
 <script src="./app.js"></script>
 <script src="./events-manager.js"></script>
+<script src="./sorts-manager.js"></script>
